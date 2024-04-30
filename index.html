@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .img-thumbnail {
+            height: 200px;
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-3">
+        <h1 class="text-center">Image Gallery</h1>
+        <div class="row">
+            <script>
+                for (let i = 1; i <= 443; i++) {
+                    document.write(`
+                        <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                            <a href="https://picgo.dev6.site/img/${i}.png" target="_blank">
+                                <img src="https://picgo.dev6.site/img/${i}.png" class="img-thumbnail">
+                            </a>
+                        </div>
+                    `);
+                }
+            </script>
+        </div>
+    </div>
+</body>
+</html>
